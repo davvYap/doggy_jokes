@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <td *ngIf="dog$ | async as dog">
+      <img src="{{ dog.message }}" alt="dog-images" srcset="" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button mat-raised-button color="warn" type="button" (click)="getDogs()">
+        <mat-icon fontIcon="pets"></mat-icon>
+        Woof
+      </button>
+    </td>
+  </tr>
+</table>
